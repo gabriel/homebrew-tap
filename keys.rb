@@ -2,18 +2,17 @@
 class Keys < Formula
   desc ""
   homepage "https://keys.pub"
-  version "0.0.42"
+  version "0.0.43"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/gabriel/keysd/releases/download/v0.0.42/keys_0.0.42_darwin_x86_64.tar.gz"
-    sha256 "3d0839b3686e2af8ef3a48343b1dde4ff96feb6a167835eb48f7ef83416d48b9"
+    url "https://github.com/gabriel/keysd/releases/download/v0.0.43/keys_0.0.43_darwin_x86_64.tar.gz"
+    sha256 "a7adceed4d39ad4070447c0f25ac57aa90bedf5c8bd889f566dfed02a6f6bd0b"
   elsif OS.linux?
   end
 
   def install
     bin.install "keys"
     bin.install "keysd"
-    bin.install "fido2.so"
   end
 end
